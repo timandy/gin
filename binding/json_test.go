@@ -11,13 +11,13 @@ import (
 	"time"
 	"unsafe"
 
-	"github.com/gin-gonic/gin/codec/api"
-	"github.com/gin-gonic/gin/codec/json"
-	"github.com/gin-gonic/gin/render"
 	jsoniter "github.com/json-iterator/go"
 	"github.com/modern-go/reflect2"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	"github.com/timandy/gin/codec/api"
+	"github.com/timandy/gin/codec/json"
+	"github.com/timandy/gin/render"
 )
 
 func TestJSONBindingBindBody(t *testing.T) {

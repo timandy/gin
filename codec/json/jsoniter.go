@@ -9,8 +9,8 @@ package json
 import (
 	"io"
 
-	"github.com/gin-gonic/gin/codec/api"
 	jsoniter "github.com/json-iterator/go"
+	"github.com/timandy/gin/codec/api"
 )
 
 func init() {

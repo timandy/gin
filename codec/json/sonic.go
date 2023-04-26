@@ -10,7 +10,7 @@ import (
 	"io"
 
 	"github.com/bytedance/sonic"
-	"github.com/gin-gonic/gin/codec/api"
+	"github.com/timandy/gin/codec/api"
 )
 
 func init() {

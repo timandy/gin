@@ -10,8 +10,8 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/gin-gonic/gin/binding"
 	"github.com/stretchr/testify/assert"
+	"github.com/timandy/gin/binding"
 )
 
 func TestBindWith(t *testing.T) {

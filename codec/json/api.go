@@ -1,5 +1,5 @@
 package json
 
-import "github.com/gin-gonic/gin/codec/api"
+import "github.com/timandy/gin/codec/api"
 
 var Api api.JsonApi

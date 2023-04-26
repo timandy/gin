@@ -9,8 +9,8 @@ package json
 import (
 	"io"
 
-	"github.com/gin-gonic/gin/codec/api"
 	"github.com/goccy/go-json"
+	"github.com/timandy/gin/codec/api"
 )
 
 func init() {

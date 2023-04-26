@@ -10,7 +10,7 @@ import (
 	"encoding/json"
 	"io"
 
-	"github.com/gin-gonic/gin/codec/api"
+	"github.com/timandy/gin/codec/api"
 )
 
 func init() {

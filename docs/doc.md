@@ -677,8 +677,8 @@ import (
   "net/http"
   "time"
 
-  "github.com/gin-gonic/gin"
-  "github.com/gin-gonic/gin/binding"
+  "github.com/timandy/gin"
+  "github.com/timandy/gin/binding"
   "github.com/go-playground/validator/v10"
 )
 
@@ -745,7 +745,7 @@ import (
   "log"
   "net/http"
 
-  "github.com/gin-gonic/gin"
+  "github.com/timandy/gin"
 )
 
 type Person struct {
@@ -783,7 +783,7 @@ import (
   "net/http"
   "time"
 
-  "github.com/gin-gonic/gin"
+  "github.com/timandy/gin"
 )
 
 type Person struct {
@@ -804,7 +804,7 @@ func startPage(c *gin.Context) {
   var person Person
   // If `GET`, only `Form` binding engine (`query`) used.
   // If `POST`, first checks the `content-type` for `JSON` or `XML`, then uses `Form` (`form-data`).
-  // See more at https://github.com/gin-gonic/gin/blob/master/binding/binding.go#L88
+  // See more at https://github.com/timandy/gin/blob/master/binding/binding.go#L88
   if c.ShouldBind(&person) == nil {
     log.Println(person.Name)
     log.Println(person.Address)
@@ -833,7 +833,7 @@ package main
 import (
   "net/http"
 
-  "github.com/gin-gonic/gin"
+  "github.com/timandy/gin"
 )
 
 type Person struct {
@@ -871,7 +871,7 @@ import (
   "fmt"
   "net/http"
 
-  "github.com/gin-gonic/gin"
+  "github.com/timandy/gin"
 )
 
 type testHeader struct {
@@ -1317,7 +1317,7 @@ import (
   "net/http"
   "time"
 
-  "github.com/gin-gonic/gin"
+  "github.com/timandy/gin"
 )
 
 func formatAsDate(t time.Time) string {
@@ -1542,7 +1542,7 @@ import (
   "net/http"
 
   "github.com/gin-gonic/autotls"
-  "github.com/gin-gonic/gin"
+  "github.com/timandy/gin"
 )
 
 func main() {
@@ -1567,7 +1567,7 @@ import (
   "net/http"
 
   "github.com/gin-gonic/autotls"
-  "github.com/gin-gonic/gin"
+  "github.com/timandy/gin"
   "golang.org/x/crypto/acme/autocert"
 )
 
@@ -1601,7 +1601,7 @@ import (
   "net/http"
   "time"
 
-  "github.com/gin-gonic/gin"
+  "github.com/timandy/gin"
   "golang.org/x/sync/errgroup"
 )
 
@@ -1717,7 +1717,7 @@ import (
   "syscall"
   "time"
 
-  "github.com/gin-gonic/gin"
+  "github.com/timandy/gin"
 )
 
 func main() {
@@ -1775,7 +1775,7 @@ import (
   "html/template"
   "net/http"
 
-  "github.com/gin-gonic/gin"
+  "github.com/timandy/gin"
 )
 
 //go:embed assets/* templates/*
@@ -2015,7 +2015,7 @@ import (
   "log"
   "net/http"
 
-  "github.com/gin-gonic/gin"
+  "github.com/timandy/gin"
 )
 
 var html = template.Must(template.New("https").Parse(`
@@ -2070,7 +2070,7 @@ import (
   "log"
   "net/http"
 
-  "github.com/gin-gonic/gin"
+  "github.com/timandy/gin"
 )
 
 func main() {
@@ -2102,7 +2102,7 @@ func main() {
 import (
   "fmt"
 
-  "github.com/gin-gonic/gin"
+  "github.com/timandy/gin"
 )
 
 func main() {
@@ -2138,9 +2138,9 @@ package main
 import (
     "io"
 
-    "github.com/gin-gonic/gin"
-    "github.com/gin-gonic/gin/codec/api"
-    "github.com/gin-gonic/gin/codec/json"
+    "github.com/timandy/gin"
+    "github.com/timandy/gin/codec/api"
+    "github.com/timandy/gin/codec/json"
     jsoniter "github.com/json-iterator/go"
 )
 
@@ -2205,7 +2205,7 @@ unnecessary computation.
 import (
   "fmt"
 
-  "github.com/gin-gonic/gin"
+  "github.com/timandy/gin"
 )
 
 func main() {
@@ -2231,7 +2231,7 @@ Look at the example below:
 import (
   "fmt"
 
-  "github.com/gin-gonic/gin"
+  "github.com/timandy/gin"
 )
 
 func main() {
@@ -2259,9 +2259,9 @@ The `net/http/httptest` package is preferable way for HTTP testing.
 package main
 
 import (
-  "net/http"
+	"net/http"
 
-  "github.com/gin-gonic/gin"
+	"github.com/timandy/gin"
 )
 
 func setupRouter() *gin.Engine {
