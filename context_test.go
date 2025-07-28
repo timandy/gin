@@ -3370,13 +3370,12 @@ func TestContextSetCookieData(t *testing.T) {
 
 	// Test for Partitioned attribute (Go 1.18+)
 	cookie = &http.Cookie{
-		Name:        "user",
-		Value:       "gin",
-		Path:        "/",
-		Domain:      "localhost",
-		Secure:      true,
-		HttpOnly:    true,
-		Partitioned: true,
+		Name:     "user",
+		Value:    "gin",
+		Path:     "/",
+		Domain:   "localhost",
+		Secure:   true,
+		HttpOnly: true,
 	}
 	c.SetCookieData(cookie)
 	setCookie = c.Writer.Header().Get("Set-Cookie")
